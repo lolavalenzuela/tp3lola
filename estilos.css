@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    background-color: #cbcbcb; /* Color de fondo general */
+    color: #333333; /* Color del texto general */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+header {
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Menú de navegación */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif; /* Fuente secundaria */
+    font-weight: 600; /* Peso para destacar */
+}
+
+.nav-link {
+    color: white !important; /* Enlaces blancos */
+}
+
+.nav-link:hover {
+    color: #ff0000 !important; /* Efecto hover amarillo */
+}
+
+/* Sección principal */
+main {
+    margin-top: 20px;
+}
+
+/* Títulos principales */
+h1, h3 {
+    font-family: 'Montserrat', sans-serif; /* Fuente secundaria */
+    color: #2663f1; /* Color del texto */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande */
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem; /* Tamaño mediano */
+    font-weight: 600;
+}
+
+/* Textos descriptivos */
+p {
+    font-size: 1rem; /* Tamaño estándar */
+    color: #666; /* Color secundario */
+}
+
+/* Imágenes */
+img {
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-size: 0.9rem; /* Tamaño reducido */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Breakpoints y responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamaño ajustado para pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+

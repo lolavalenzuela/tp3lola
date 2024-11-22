@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3</title>
+    <!-- Vincular CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vincular Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Vincular hoja de estilos personalizada -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header con menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/logololi.jpg" alt="Logo" class="img-fluid" style="width: 40px; height: 40px; border-radius: 50%;">
+                    Mi Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/utdtlab.loli/" target="_blank">Sobre Mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.utdt.edu" target="_blank">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="container my-5">
+        <!-- Encabezado principal -->
+        <section id="home" class="text-center mb-4">
+            <h1 class="display-4">Bienvenidos a Mi Portfolio</h1>
+            <p class="lead">A continuación vas a poder ver una parte de mis trabajos realizados durante la Licenciatura de Diseño.</p>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section id="about" class="row">
+            <div class="col-md-6 col-lg-4">
+                <img src="imagenes/lab-01.png" alt="Ejemplo 1" class="img-fluid mb-3">
+                <h3>La Cuna de la Tormenta</h3>
+                <p>Trabajo realizado en el tercer año de la carrera. Cursando la materia Laboratorio de Diseño 5, Diseño UX.</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="imagenes/lab-03.png" alt="Ejemplo 2" class="img-fluid mb-3">
+                <h3>Formas y Colores</h3>
+                <p>Primera entrega parcial de la carrera. Durante Laboratorio de Diseño 5.</p>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <img src="imagenes/lab-02.png" alt="Ejemplo 3" class="img-fluid mb-3">
+                <h3>Plumaje Real</h3>
+                <p>Panel de información sobre el pavo real. Trabajo realizado durante la materia Visualización de Datos en tercer año de la carrera.</p>
+            </div>
+        </section>
+
+        <!-- Botón que activa el modal -->
+        <div class="text-center mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Abrir Formulario de Contacto
+            </button>
+        </div>
+    </main>
+
+    <!-- Modal con formulario -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Formulario de Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                            <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Mi Portfolio. Universidad Torcuato Di Tella. Lola Valenzuela</p>
+    </footer>
+
+    <!-- Vincular JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Validación personalizada de Bootstrap -->
+    <script>
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
+
