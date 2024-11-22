@@ -1,82 +1,82 @@
-/* Estilos generales */
+
 body {
-    font-family: 'Roboto', sans-serif; /* Fuente principal */
-    background-color: #cbcbcb; /* Color de fondo general */
-    color: #333333; /* Color del texto general */
+    font-family: 'Roboto', sans-serif; 
+    background-color: #cbcbcb; 
+    color: #333333; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* Estilos del header */
+
 header {
-    background-color: #333; /* Fondo oscuro */
+    background-color: #333; 
     color: white;
     padding: 1rem 0;
 }
 
-/* Menú de navegación */
+
 .navbar-brand {
-    font-family: 'Montserrat', sans-serif; /* Fuente secundaria */
-    font-weight: 600; /* Peso para destacar */
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600; 
 }
 
 .nav-link {
-    color: white !important; /* Enlaces blancos */
+    color: white !important; 
 }
 
 .nav-link:hover {
-    color: #ff0000 !important; /* Efecto hover amarillo */
+    color: #ff0000 !important; 
 }
 
-/* Sección principal */
+
 main {
     margin-top: 20px;
 }
 
-/* Títulos principales */
+
 h1, h3 {
-    font-family: 'Montserrat', sans-serif; /* Fuente secundaria */
-    color: #2663f1; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; 
+    color: #2663f1; 
 }
 
 h1 {
-    font-size: 2.5rem; /* Tamaño grande */
+    font-size: 2.5rem; 
     font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem; /* Tamaño mediano */
+    font-size: 1.5rem; 
     font-weight: 600;
 }
 
-/* Textos descriptivos */
+
 p {
-    font-size: 1rem; /* Tamaño estándar */
-    color: #666; /* Color secundario */
+    font-size: 1rem; 
+    color: #666;
 }
 
-/* Imágenes */
+
 img {
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
 
-/* Footer */
+
 footer {
-    background-color: #333; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    font-size: 0.9rem; /* Tamaño reducido */
+    background-color: #333; 
+    color: #fff; 
+    font-size: 0.9rem; 
     text-align: center;
     padding: 1rem 0;
 }
 
-/* Breakpoints y responsividad */
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Tamaño ajustado para pantallas pequeñas */
+        font-size: 2rem; 
     }
 
     h3 {
